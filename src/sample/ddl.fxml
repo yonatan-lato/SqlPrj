@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane alignment="center" hgap="10" prefHeight="600.0" prefWidth="800.0" stylesheets="@gui.css" vgap="10" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0" stylesheets="@gui.css" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+         <children>
+            <VBox alignment="TOP_RIGHT" prefHeight="800.0" prefWidth="400.0" stylesheets="@gui.css" HBox.hgrow="ALWAYS">
+               <children>
+                  <TilePane stylesheets="@gui.css">
+                     <children>
+                        <Label id="lbl" prefHeight="27.0" prefWidth="323.0" stylesheets="@gui.css" text="CREATE , ALTER, DEROP etc" />
+                     </children>
+                  </TilePane>
+                  <Separator prefWidth="200.0" />
+                  <HBox prefHeight="350.0" prefWidth="790.0">
+                     <children>
+                        <Separator orientation="VERTICAL" prefHeight="200.0" />
+                        <TextArea id="tarDDL" prefHeight="194.0" prefWidth="497.0" />
+                        <Button id="btnDDL" mnemonicParsing="false" prefHeight="39.0" prefWidth="114.0" text="Excute DDL" />
+                     </children>
+                  </HBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <TextField id="txbDone" />
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+         <GridPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </GridPane.margin>
+      </HBox>
+   </children>
+</GridPane>
